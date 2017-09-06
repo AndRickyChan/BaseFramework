@@ -6,7 +6,8 @@
 //  Copyright © 2017年 rickychan. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "AppDelegate+RootController.h"
+#import "AppDelegate+Service.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self setAppWindow];
+    [self setRootController];
+    [self configurationNormal];
+    [self registerUmeng];
+    [self registerJPush];
     return YES;
 }
 

@@ -12,4 +12,22 @@
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
+//加入这个宏，可以省略所有 mas_ （除了mas_equalTo）
+#define MAS_SHORTHAND
+
+//加入这个宏，那么mas_equalTo就和equalTo一样的了
+#define MAS_SHORTHAND_GLOBALS
+
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <AFNetworking.h>
+#import <MJRefresh.h>
+#import <Masonry.h>
+#import <MBProgressHUD.h>
+
+#import "BaseMacro.h"
+#import "BaseThemeMacro.h"
+#import "BaseRequestMacro.h"
+#import "LogUtils.h"
+#import "SizeUtils.h"
+
 #endif /* Base_Prefix_pch */
