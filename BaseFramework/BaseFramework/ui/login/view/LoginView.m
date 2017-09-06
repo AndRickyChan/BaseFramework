@@ -20,7 +20,7 @@
         phoneLabel.text = phoneStr;
         phoneLabel.textColor = TITLE_COLOR;
         phoneLabel.font = [UIFont systemFontOfSize:13];
-        CGSize phoneSize = [SizeUtils sizeWithString:phoneStr font:[UIFont systemFontOfSize:13] maxSize:CGSizeMake(100, 16)];
+        CGSize phoneSize = [SizeUtils sizeWithString:phoneStr font:[UIFont systemFontOfSize:14] maxSize:CGSizeMake(100, 16)];
         [self addSubview:phoneLabel];
         [phoneLabel mas_makeConstraints:^(MASConstraintMaker *make){
             make.left.equalTo(self.left).offset(50);
