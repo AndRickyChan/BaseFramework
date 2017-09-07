@@ -27,7 +27,22 @@
 }
 
 -(void)loginWithPhone:(NSString *)phone andPass:(NSString *)password{
-
+    APIRequest *request = [[APIRequest alloc]initWithTag:@"userLogin"];
+    request.urlAction = url_request_type_login;
+    NSMutableDictionary *param = [NSMutableDictionary dictionary];
+    [param setObject:@"1" forKey:@"lun"];
+    [param setObject:@"1" forKey:@"pwd"];
+    request.paramDict = param;
+    request.methodType = APIRequestMethodTypePost;
+    [[APIClient shareInstance]executeWithApi:request success:^(APIRequest *api,APIResult *result){
+        if (self.delegate && [self.delegate respondsToSelector:@selector(loginSuccess)]) {
+            [self.delegate loginSuccess];
+        }
+    } failed:^(APIRequest *api,NSError *error){
+        if(self.delegate && [self.delegate respondsToSelector:@selector(loginFailed:)]){
+            [self.delegate loginFailed:error.domain];
+        }
+    }];
 }
 
 @end

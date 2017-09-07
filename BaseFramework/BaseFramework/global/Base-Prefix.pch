@@ -30,4 +30,8 @@
 #import "LogUtils.h"
 #import "SizeUtils.h"
 
+#import "APIResult.h"
+#import "APIRequest.h"
+#import "APIClient.h"
+
 #endif /* Base_Prefix_pch */

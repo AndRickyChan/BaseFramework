@@ -1,0 +1,11 @@
+{
+    "code":1,
+    "msg":"获取个人信息成功",
+    data{
+        "userId":"rgregreshtshtsGSERG",
+        "phone":"15327039271",
+        "nickName":"Ricky",
+        "userGender":1,
+        "userSign":"没有什么是我做不到的..."
+    }
+}

@@ -34,7 +34,18 @@
 -(void)loginClicked:(UIButton *)sender{
     NSString *phoneStr = _loginView.phoneField.text;
     NSString *passStr = _loginView.passwordField.text;
-    [_loginService loginWithPhone:phoneStr andPass:passStr];
+    if (![_loginService checkPhoneValidate:phoneStr]) {
+        [self showToast:@"请输入正确的电话号码"];
+        return ;
+    }
+    if (![_loginService checkPassValidate:passStr]) {
+        [self showToast:@"请输入正确的密码格式"];
+        return ;
+    }
+    if ([_loginService checkPhoneValidate:phoneStr] && [_loginService checkPassValidate:passStr]) {
+        [self showProgress];
+        [_loginService loginWithPhone:phoneStr andPass:passStr];
+    }
 }
 
 -(void)forgetPassClicked:(UIButton *)sender{
@@ -49,11 +60,12 @@
 
 -(void)loginFailed:(NSString *)message{
     [self hideProgress];
-    
+    [self showToast:@"登录失败..."];
 }
 
 -(void)loginSuccess{
     [self hideProgress];
+    [self showToast:@"登录成功...."];
     
 }
 
