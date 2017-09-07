@@ -23,6 +23,13 @@
 		9C2439FA1F5FE5CD005CA5D7 /* APIResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C2439F91F5FE5CD005CA5D7 /* APIResult.m */; };
 		9C2439FD1F5FEACE005CA5D7 /* APIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C2439FC1F5FEACE005CA5D7 /* APIRequest.m */; };
 		9C243A001F5FEF8F005CA5D7 /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C2439FF1F5FEF8E005CA5D7 /* APIClient.m */; };
+		9C3CACDA1F60F01C0002915B /* HomeRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3CACD91F60F01C0002915B /* HomeRootViewController.m */; };
+		9C3CACE01F60F8390002915B /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3CACDF1F60F8390002915B /* HomeViewController.m */; };
+		9C3CACE41F60F8620002915B /* HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3CACE31F60F8620002915B /* HomeView.m */; };
+		9C3CACE71F60F9D50002915B /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3CACE61F60F9D50002915B /* MineViewController.m */; };
+		9C3CACEA1F60F9E30002915B /* ShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3CACE91F60F9E30002915B /* ShopViewController.m */; };
+		9C3CACEF1F60FA150002915B /* MineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3CACEE1F60FA150002915B /* MineView.m */; };
+		9C3CACF21F60FB080002915B /* ShopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3CACF11F60FB080002915B /* ShopView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +68,20 @@
 		9C2439FC1F5FEACE005CA5D7 /* APIRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIRequest.m; sourceTree = "<group>"; };
 		9C2439FE1F5FEF8E005CA5D7 /* APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
 		9C2439FF1F5FEF8E005CA5D7 /* APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
+		9C3CACD81F60F01C0002915B /* HomeRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeRootViewController.h; sourceTree = "<group>"; };
+		9C3CACD91F60F01C0002915B /* HomeRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeRootViewController.m; sourceTree = "<group>"; };
+		9C3CACDE1F60F8390002915B /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		9C3CACDF1F60F8390002915B /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		9C3CACE21F60F8620002915B /* HomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeView.h; sourceTree = "<group>"; };
+		9C3CACE31F60F8620002915B /* HomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeView.m; sourceTree = "<group>"; };
+		9C3CACE51F60F9D50002915B /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		9C3CACE61F60F9D50002915B /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		9C3CACE81F60F9E30002915B /* ShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopViewController.h; sourceTree = "<group>"; };
+		9C3CACE91F60F9E30002915B /* ShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopViewController.m; sourceTree = "<group>"; };
+		9C3CACED1F60FA150002915B /* MineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineView.h; sourceTree = "<group>"; };
+		9C3CACEE1F60FA150002915B /* MineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineView.m; sourceTree = "<group>"; };
+		9C3CACF01F60FB080002915B /* ShopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopView.h; sourceTree = "<group>"; };
+		9C3CACF11F60FB080002915B /* ShopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopView.m; sourceTree = "<group>"; };
 		D26AF7711EDFA0632F0B6955 /* Pods-BaseFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseFramework/Pods-BaseFramework.release.xcconfig"; sourceTree = "<group>"; };
 		E35ABACDA9E3773F8A8268CA /* Pods-BaseFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseFramework/Pods-BaseFramework.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -153,6 +174,7 @@
 		9C2439D21F5F8FB3005CA5D7 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				9C3CACD11F60E8340002915B /* home */,
 				9C2439E21F5F9E3A005CA5D7 /* login */,
 			);
 			path = ui;
@@ -237,6 +259,75 @@
 				9C2439E91F5F9E93005CA5D7 /* LoginService.m */,
 			);
 			path = service;
+			sourceTree = "<group>";
+		};
+		9C3CACD11F60E8340002915B /* home */ = {
+			isa = PBXGroup;
+			children = (
+				9C3CACDD1F60F8240002915B /* shop */,
+				9C3CACDC1F60F8140002915B /* mine */,
+				9C3CACDB1F60F8080002915B /* home */,
+				9C3CACD81F60F01C0002915B /* HomeRootViewController.h */,
+				9C3CACD91F60F01C0002915B /* HomeRootViewController.m */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		9C3CACDB1F60F8080002915B /* home */ = {
+			isa = PBXGroup;
+			children = (
+				9C3CACE11F60F84E0002915B /* view */,
+				9C3CACDE1F60F8390002915B /* HomeViewController.h */,
+				9C3CACDF1F60F8390002915B /* HomeViewController.m */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		9C3CACDC1F60F8140002915B /* mine */ = {
+			isa = PBXGroup;
+			children = (
+				9C3CACEB1F60F9EB0002915B /* view */,
+				9C3CACE51F60F9D50002915B /* MineViewController.h */,
+				9C3CACE61F60F9D50002915B /* MineViewController.m */,
+			);
+			path = mine;
+			sourceTree = "<group>";
+		};
+		9C3CACDD1F60F8240002915B /* shop */ = {
+			isa = PBXGroup;
+			children = (
+				9C3CACEC1F60F9FF0002915B /* view */,
+				9C3CACE81F60F9E30002915B /* ShopViewController.h */,
+				9C3CACE91F60F9E30002915B /* ShopViewController.m */,
+			);
+			path = shop;
+			sourceTree = "<group>";
+		};
+		9C3CACE11F60F84E0002915B /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9C3CACE21F60F8620002915B /* HomeView.h */,
+				9C3CACE31F60F8620002915B /* HomeView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		9C3CACEB1F60F9EB0002915B /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9C3CACED1F60FA150002915B /* MineView.h */,
+				9C3CACEE1F60FA150002915B /* MineView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		9C3CACEC1F60F9FF0002915B /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9C3CACF01F60FB080002915B /* ShopView.h */,
+				9C3CACF11F60FB080002915B /* ShopView.m */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		9E4D62266DF1A7CFFD285F24 /* Pods */ = {
@@ -372,15 +463,22 @@
 				9C2439F01F5FA638005CA5D7 /* AppDelegate+Service.m in Sources */,
 				9C2439BE1F5F8996005CA5D7 /* AppDelegate.m in Sources */,
 				9C2439FD1F5FEACE005CA5D7 /* APIRequest.m in Sources */,
+				9C3CACDA1F60F01C0002915B /* HomeRootViewController.m in Sources */,
 				9C2439F31F5FA6A3005CA5D7 /* LogUtils.m in Sources */,
 				9C2439EA1F5F9E93005CA5D7 /* LoginService.m in Sources */,
 				9C2439F61F5FA810005CA5D7 /* SizeUtils.m in Sources */,
 				9C2439FA1F5FE5CD005CA5D7 /* APIResult.m in Sources */,
+				9C3CACE01F60F8390002915B /* HomeViewController.m in Sources */,
+				9C3CACE41F60F8620002915B /* HomeView.m in Sources */,
 				9C2439ED1F5FA30C005CA5D7 /* LoginView.m in Sources */,
 				9C2439DE1F5F9A7D005CA5D7 /* BaseViewController.m in Sources */,
+				9C3CACE71F60F9D50002915B /* MineViewController.m in Sources */,
 				9C2439E11F5F9BF9005CA5D7 /* AppDelegate+RootController.m in Sources */,
 				9C243A001F5FEF8F005CA5D7 /* APIClient.m in Sources */,
 				9C2439BB1F5F8996005CA5D7 /* main.m in Sources */,
+				9C3CACEA1F60F9E30002915B /* ShopViewController.m in Sources */,
+				9C3CACEF1F60FA150002915B /* MineView.m in Sources */,
+				9C3CACF21F60FB080002915B /* ShopView.m in Sources */,
 				9C2439E71F5F9E6F005CA5D7 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

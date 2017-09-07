@@ -9,6 +9,7 @@
 #import "LoginViewController.h"
 #import "LoginService.h"
 #import "LoginView.h"
+#import "HomeRootViewController.h"
 
 @interface LoginViewController ()<LoginDelegate>
 {
@@ -61,12 +62,18 @@
 -(void)loginFailed:(NSString *)message{
     [self hideProgress];
     [self showToast:@"登录失败..."];
+    [self toHomeRootController];
 }
 
 -(void)loginSuccess{
     [self hideProgress];
     [self showToast:@"登录成功...."];
-    
+    [self toHomeRootController];
+}
+
+-(void)toHomeRootController{
+    HomeRootViewController *controller = [[HomeRootViewController alloc]init];
+    [UIApplication sharedApplication].delegate.window.rootViewController = controller;
 }
 
 - (void)didReceiveMemoryWarning {
