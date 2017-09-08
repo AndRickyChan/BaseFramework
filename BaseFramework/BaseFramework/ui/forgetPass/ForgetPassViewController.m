@@ -23,7 +23,7 @@
     // Do any additional setup after loading the view.
     self.navigationItem.title = @"找回密码";
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(backClicked:)];
-    _forgetPassView = [[ForgetPassView alloc]initWithFrame:self.view.bounds];
+    _forgetPassView = [[ForgetPassView alloc]initWithFrame:NAVIGATION_RECT];
     [self.view addSubview:_forgetPassView];
 }
 

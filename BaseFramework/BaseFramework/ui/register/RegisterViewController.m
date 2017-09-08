@@ -24,7 +24,7 @@
     // Do any additional setup after loading the view.
     self.navigationItem.title = @"注册";
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(backClicked:)];
-    _registerView = [[RegisterView alloc]initWithFrame:self.view.bounds];
+    _registerView = [[RegisterView alloc]initWithFrame:NAVIGATION_RECT];
     [self.view addSubview:_registerView];
 }
 

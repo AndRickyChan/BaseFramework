@@ -27,7 +27,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navigationItem.title = @"设置";
-    _settingView = [[SettingView alloc]initWithFrame:self.view.bounds];
+    _settingView = [[SettingView alloc]initWithFrame:NAVIGATION_RECT];
     [self.view addSubview:_settingView];
     _settingView.tableView.dataSource = self;
     _settingView.tableView.delegate = self;
