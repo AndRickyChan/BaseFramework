@@ -10,6 +10,8 @@
 #import "LoginService.h"
 #import "LoginView.h"
 #import "HomeRootViewController.h"
+#import "RegisterViewController.h"
+#import "ForgetPassViewController.h"
 
 @interface LoginViewController ()<LoginDelegate>
 {
@@ -50,11 +52,14 @@
 }
 
 -(void)forgetPassClicked:(UIButton *)sender{
-
+    UINavigationController *forgetPassNav = [[UINavigationController alloc]initWithRootViewController:[[ForgetPassViewController alloc]init]];
+    [self presentViewController:forgetPassNav animated:YES completion:nil];
 }
 
 -(void)registerClicked:(UIButton *)sender{
-
+    RegisterViewController *registerView = [[RegisterViewController alloc]init];
+    UINavigationController *registerNav = [[UINavigationController alloc]initWithRootViewController:registerView];
+    [self presentViewController:registerNav animated:YES completion:nil];
 }
 
 #pragma mark login delegate begin 

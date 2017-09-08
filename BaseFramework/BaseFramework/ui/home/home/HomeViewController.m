@@ -20,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.leftBarButtonItem = nil;
     _homeView = [[HomeView alloc]initWithFrame:self.view.bounds];
     [self.view addSubview:_homeView];
 }

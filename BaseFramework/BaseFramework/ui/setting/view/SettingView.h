@@ -1,5 +1,5 @@
 //
-//  MineView.h
+//  SettingView.h
 //  BaseFramework
 //
 //  Created by rickychan on 2017/9/7.
@@ -8,9 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MineView : UIView
-
-@property(nonatomic,strong)UIImageView *headerImageView;
+@interface SettingView : UIView
 
 @property(nonatomic,strong)UITableView *tableView;
 

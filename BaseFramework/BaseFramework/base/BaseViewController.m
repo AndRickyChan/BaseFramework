@@ -18,6 +18,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = BACKGROUND_COLOR;
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(backClicked:)];
+}
+
+-(void)backClicked:(id)sender{
+    [self popController];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -43,9 +48,7 @@
 }
 
 -(void)pushController:(UIViewController *)viewController{
-    if (viewController.childViewControllers.count>=1) {
-        viewController.hidesBottomBarWhenPushed = YES;
-    }
+    viewController.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:viewController animated:YES];
 }
 

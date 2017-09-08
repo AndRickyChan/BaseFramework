@@ -30,6 +30,15 @@
 		9C3CACEA1F60F9E30002915B /* ShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3CACE91F60F9E30002915B /* ShopViewController.m */; };
 		9C3CACEF1F60FA150002915B /* MineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3CACEE1F60FA150002915B /* MineView.m */; };
 		9C3CACF21F60FB080002915B /* ShopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3CACF11F60FB080002915B /* ShopView.m */; };
+		9C3CACF71F61294F0002915B /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3CACF61F61294F0002915B /* RegisterViewController.m */; };
+		9C3CACFE1F6129AA0002915B /* RegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3CACFD1F6129AA0002915B /* RegisterView.m */; };
+		9C3CAD011F612F570002915B /* ForgetPassView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3CAD001F612F570002915B /* ForgetPassView.m */; };
+		9C3CAD041F61300D0002915B /* ForgetPassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3CAD031F61300D0002915B /* ForgetPassViewController.m */; };
+		9C3CAD0A1F6142BE0002915B /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3CAD091F6142BE0002915B /* SettingViewController.m */; };
+		9C3CAD0D1F6145430002915B /* SettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3CAD0C1F6145430002915B /* SettingView.m */; };
+		9C869C201F6226A6006200AA /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C869C1F1F6226A6006200AA /* AboutViewController.m */; };
+		9C869C231F6226C1006200AA /* AboutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C869C221F6226C1006200AA /* AboutView.m */; };
+		9C869C261F622F30006200AA /* AppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C869C251F622F30006200AA /* AppUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +91,24 @@
 		9C3CACEE1F60FA150002915B /* MineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineView.m; sourceTree = "<group>"; };
 		9C3CACF01F60FB080002915B /* ShopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopView.h; sourceTree = "<group>"; };
 		9C3CACF11F60FB080002915B /* ShopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopView.m; sourceTree = "<group>"; };
+		9C3CACF51F61294F0002915B /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		9C3CACF61F61294F0002915B /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		9C3CACFC1F6129AA0002915B /* RegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterView.h; sourceTree = "<group>"; };
+		9C3CACFD1F6129AA0002915B /* RegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterView.m; sourceTree = "<group>"; };
+		9C3CACFF1F612F570002915B /* ForgetPassView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetPassView.h; sourceTree = "<group>"; };
+		9C3CAD001F612F570002915B /* ForgetPassView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetPassView.m; sourceTree = "<group>"; };
+		9C3CAD021F61300D0002915B /* ForgetPassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetPassViewController.h; sourceTree = "<group>"; };
+		9C3CAD031F61300D0002915B /* ForgetPassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetPassViewController.m; sourceTree = "<group>"; };
+		9C3CAD081F6142BE0002915B /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		9C3CAD091F6142BE0002915B /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		9C3CAD0B1F6145430002915B /* SettingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingView.h; sourceTree = "<group>"; };
+		9C3CAD0C1F6145430002915B /* SettingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingView.m; sourceTree = "<group>"; };
+		9C869C1E1F6226A6006200AA /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		9C869C1F1F6226A6006200AA /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		9C869C211F6226C1006200AA /* AboutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutView.h; sourceTree = "<group>"; };
+		9C869C221F6226C1006200AA /* AboutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutView.m; sourceTree = "<group>"; };
+		9C869C241F622F30006200AA /* AppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppUtils.h; sourceTree = "<group>"; };
+		9C869C251F622F30006200AA /* AppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppUtils.m; sourceTree = "<group>"; };
 		D26AF7711EDFA0632F0B6955 /* Pods-BaseFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseFramework/Pods-BaseFramework.release.xcconfig"; sourceTree = "<group>"; };
 		E35ABACDA9E3773F8A8268CA /* Pods-BaseFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseFramework/Pods-BaseFramework.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -160,6 +187,8 @@
 				9C2439F21F5FA6A3005CA5D7 /* LogUtils.m */,
 				9C2439F41F5FA810005CA5D7 /* SizeUtils.h */,
 				9C2439F51F5FA810005CA5D7 /* SizeUtils.m */,
+				9C869C241F622F30006200AA /* AppUtils.h */,
+				9C869C251F622F30006200AA /* AppUtils.m */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -174,6 +203,10 @@
 		9C2439D21F5F8FB3005CA5D7 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				9C869C1C1F622682006200AA /* about */,
+				9C3CAD051F6142980002915B /* setting */,
+				9C3CACF41F6129310002915B /* forgetPass */,
+				9C3CACF31F6129200002915B /* register */,
 				9C3CACD11F60E8340002915B /* home */,
 				9C2439E21F5F9E3A005CA5D7 /* login */,
 			);
@@ -330,6 +363,106 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		9C3CACF31F6129200002915B /* register */ = {
+			isa = PBXGroup;
+			children = (
+				9C3CACF91F6129690002915B /* service */,
+				9C3CACF81F61295F0002915B /* view */,
+				9C3CACF51F61294F0002915B /* RegisterViewController.h */,
+				9C3CACF61F61294F0002915B /* RegisterViewController.m */,
+			);
+			path = register;
+			sourceTree = "<group>";
+		};
+		9C3CACF41F6129310002915B /* forgetPass */ = {
+			isa = PBXGroup;
+			children = (
+				9C3CACFB1F61297A0002915B /* view */,
+				9C3CACFA1F6129700002915B /* service */,
+				9C3CAD021F61300D0002915B /* ForgetPassViewController.h */,
+				9C3CAD031F61300D0002915B /* ForgetPassViewController.m */,
+			);
+			path = forgetPass;
+			sourceTree = "<group>";
+		};
+		9C3CACF81F61295F0002915B /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9C3CACFC1F6129AA0002915B /* RegisterView.h */,
+				9C3CACFD1F6129AA0002915B /* RegisterView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		9C3CACF91F6129690002915B /* service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		9C3CACFA1F6129700002915B /* service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		9C3CACFB1F61297A0002915B /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9C3CACFF1F612F570002915B /* ForgetPassView.h */,
+				9C3CAD001F612F570002915B /* ForgetPassView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		9C3CAD051F6142980002915B /* setting */ = {
+			isa = PBXGroup;
+			children = (
+				9C3CAD071F6142AF0002915B /* service */,
+				9C3CAD061F6142A40002915B /* view */,
+				9C3CAD081F6142BE0002915B /* SettingViewController.h */,
+				9C3CAD091F6142BE0002915B /* SettingViewController.m */,
+			);
+			path = setting;
+			sourceTree = "<group>";
+		};
+		9C3CAD061F6142A40002915B /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9C3CAD0B1F6145430002915B /* SettingView.h */,
+				9C3CAD0C1F6145430002915B /* SettingView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		9C3CAD071F6142AF0002915B /* service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		9C869C1C1F622682006200AA /* about */ = {
+			isa = PBXGroup;
+			children = (
+				9C869C1D1F622691006200AA /* view */,
+				9C869C1E1F6226A6006200AA /* AboutViewController.h */,
+				9C869C1F1F6226A6006200AA /* AboutViewController.m */,
+			);
+			path = about;
+			sourceTree = "<group>";
+		};
+		9C869C1D1F622691006200AA /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9C869C211F6226C1006200AA /* AboutView.h */,
+				9C869C221F6226C1006200AA /* AboutView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		9E4D62266DF1A7CFFD285F24 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -462,8 +595,11 @@
 			files = (
 				9C2439F01F5FA638005CA5D7 /* AppDelegate+Service.m in Sources */,
 				9C2439BE1F5F8996005CA5D7 /* AppDelegate.m in Sources */,
+				9C3CAD041F61300D0002915B /* ForgetPassViewController.m in Sources */,
 				9C2439FD1F5FEACE005CA5D7 /* APIRequest.m in Sources */,
+				9C869C231F6226C1006200AA /* AboutView.m in Sources */,
 				9C3CACDA1F60F01C0002915B /* HomeRootViewController.m in Sources */,
+				9C3CACF71F61294F0002915B /* RegisterViewController.m in Sources */,
 				9C2439F31F5FA6A3005CA5D7 /* LogUtils.m in Sources */,
 				9C2439EA1F5F9E93005CA5D7 /* LoginService.m in Sources */,
 				9C2439F61F5FA810005CA5D7 /* SizeUtils.m in Sources */,
@@ -472,14 +608,20 @@
 				9C3CACE41F60F8620002915B /* HomeView.m in Sources */,
 				9C2439ED1F5FA30C005CA5D7 /* LoginView.m in Sources */,
 				9C2439DE1F5F9A7D005CA5D7 /* BaseViewController.m in Sources */,
+				9C3CAD0A1F6142BE0002915B /* SettingViewController.m in Sources */,
+				9C3CAD011F612F570002915B /* ForgetPassView.m in Sources */,
+				9C869C261F622F30006200AA /* AppUtils.m in Sources */,
 				9C3CACE71F60F9D50002915B /* MineViewController.m in Sources */,
 				9C2439E11F5F9BF9005CA5D7 /* AppDelegate+RootController.m in Sources */,
+				9C869C201F6226A6006200AA /* AboutViewController.m in Sources */,
+				9C3CACFE1F6129AA0002915B /* RegisterView.m in Sources */,
 				9C243A001F5FEF8F005CA5D7 /* APIClient.m in Sources */,
 				9C2439BB1F5F8996005CA5D7 /* main.m in Sources */,
 				9C3CACEA1F60F9E30002915B /* ShopViewController.m in Sources */,
 				9C3CACEF1F60FA150002915B /* MineView.m in Sources */,
 				9C3CACF21F60FB080002915B /* ShopView.m in Sources */,
 				9C2439E71F5F9E6F005CA5D7 /* LoginViewController.m in Sources */,
+				9C3CAD0D1F6145430002915B /* SettingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

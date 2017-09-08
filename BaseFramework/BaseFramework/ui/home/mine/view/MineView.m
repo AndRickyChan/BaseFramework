@@ -14,16 +14,29 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        UILabel *label = [[UILabel alloc]init];
-        label.textColor = TITLE_COLOR;
-        label.text = @"我的";
-        label.textAlignment = NSTextAlignmentCenter;
-        label.backgroundColor = [UIColor yellowColor];
-        [self addSubview:label];
-        [label mas_makeConstraints:^(MASConstraintMaker *make){
-            make.centerY.equalTo(self.centerY);
-            make.centerX.equalTo(self.centerX);
-            make.size.equalTo(CGSizeMake(100, 100));
+        UIView *backView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 200)];
+        backView.backgroundColor = PRIMARY_COLOR;
+        _headerImageView = [[UIImageView alloc]init];
+        _headerImageView.backgroundColor = [UIColor greenColor];
+        _headerImageView.layer.masksToBounds = YES;
+        _headerImageView.layer.cornerRadius = 39;
+        [backView addSubview:_headerImageView];
+        [_headerImageView mas_makeConstraints:^(MASConstraintMaker *make){
+            make.centerX.equalTo(backView.centerX);
+            make.centerY.equalTo(backView.centerY);
+            make.size.equalTo(CGSizeMake(78, 78));
+        }];
+        [self addSubview:backView];
+        _tableView = [[UITableView alloc]init];
+        _tableView.backgroundColor = BACKGROUND_COLOR;
+        _tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+        [self addSubview:_tableView];
+        [_tableView mas_makeConstraints:^(MASConstraintMaker *make){
+            make.top.equalTo(backView.bottom);
+            make.left.equalTo(self.left);
+            make.right.equalTo(self.right);
+            make.bottom.equalTo(self.bottom);
         }];
     }
     return self;

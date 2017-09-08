@@ -1,29 +1,35 @@
 //
-//  ShopViewController.m
+//  RegisterViewController.m
 //  BaseFramework
 //
 //  Created by rickychan on 2017/9/7.
 //  Copyright © 2017年 rickychan. All rights reserved.
 //
 
-#import "ShopViewController.h"
-#import "ShopView.h"
+#import "RegisterViewController.h"
+#import "RegisterView.h"
 
-@interface ShopViewController ()
+@interface RegisterViewController ()
+
 {
-    ShopView *_shopView;
+    RegisterView *_registerView;
 }
 
 @end
 
-@implementation ShopViewController
+@implementation RegisterViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.navigationItem.leftBarButtonItem = nil;
-    _shopView = [[ShopView alloc]initWithFrame:self.view.bounds];
-    [self.view addSubview:_shopView];
+    self.navigationItem.title = @"注册";
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(backClicked:)];
+    _registerView = [[RegisterView alloc]initWithFrame:self.view.bounds];
+    [self.view addSubview:_registerView];
+}
+
+-(void)backClicked:(UIBarButtonItem *)sender{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

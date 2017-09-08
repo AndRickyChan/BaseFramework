@@ -1,29 +1,34 @@
 //
-//  ShopViewController.m
+//  ForgetPassViewController.m
 //  BaseFramework
 //
 //  Created by rickychan on 2017/9/7.
 //  Copyright © 2017年 rickychan. All rights reserved.
 //
 
-#import "ShopViewController.h"
-#import "ShopView.h"
+#import "ForgetPassViewController.h"
+#import "ForgetPassView.h"
 
-@interface ShopViewController ()
+@interface ForgetPassViewController ()
 {
-    ShopView *_shopView;
+    ForgetPassView *_forgetPassView;
 }
 
 @end
 
-@implementation ShopViewController
+@implementation ForgetPassViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.navigationItem.leftBarButtonItem = nil;
-    _shopView = [[ShopView alloc]initWithFrame:self.view.bounds];
-    [self.view addSubview:_shopView];
+    self.navigationItem.title = @"找回密码";
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(backClicked:)];
+    _forgetPassView = [[ForgetPassView alloc]initWithFrame:self.view.bounds];
+    [self.view addSubview:_forgetPassView];
+}
+
+-(void)backClicked:(UIBarButtonItem *)sender{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

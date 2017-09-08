@@ -18,6 +18,8 @@
     UINavigationBar.appearance.tintColor = [UIColor whiteColor];
     //标题颜色
     UINavigationBar.appearance.titleTextAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor]};
+    //去掉导航栏自带的透明度
+    UINavigationBar.appearance.translucent = NO;
     //导航栏颜色
     UINavigationBar.appearance.barTintColor = PRIMARY_COLOR;
     [self.window makeKeyAndVisible];

@@ -14,7 +14,7 @@ typedef enum APIRequestMethodType{
     APIRequestMethodTypePost
 }APIRequestMethodType;
 
-#define defaultTimeOutSeconds 15
+#define defaultTimeOutSeconds 5
 
 
 @interface APIRequest : NSObject

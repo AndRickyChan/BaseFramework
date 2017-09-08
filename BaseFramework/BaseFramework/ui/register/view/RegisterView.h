@@ -1,5 +1,5 @@
 //
-//  MineView.h
+//  RegisterView.h
 //  BaseFramework
 //
 //  Created by rickychan on 2017/9/7.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MineView : UIView
-
-@property(nonatomic,strong)UIImageView *headerImageView;
-
-@property(nonatomic,strong)UITableView *tableView;
+@interface RegisterView : UIView
 
 @end
