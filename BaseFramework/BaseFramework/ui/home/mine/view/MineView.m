@@ -30,6 +30,7 @@
         _tableView = [[UITableView alloc]init];
         _tableView.backgroundColor = BACKGROUND_COLOR;
         _tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
+        _tableView.bounces = NO;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
         [self addSubview:_tableView];
         [_tableView mas_makeConstraints:^(MASConstraintMaker *make){

@@ -17,6 +17,7 @@
         _tableView = [[UITableView alloc]init];
         _tableView.backgroundColor = BACKGROUND_COLOR;
         _tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
+        _tableView.bounces = NO;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
         _tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
         [self addSubview:_tableView];
