@@ -69,6 +69,7 @@
     
 }
 
+//重写getter方法，实现懒加载数据
 -(NSMutableArray *)aboutArrays{
     if (_aboutArrays == nil) {
         _aboutArrays = @[@"检查更新",@"推荐给好友"].mutableCopy;

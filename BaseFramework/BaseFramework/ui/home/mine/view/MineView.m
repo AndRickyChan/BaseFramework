@@ -20,12 +20,24 @@
         _headerImageView.backgroundColor = [UIColor greenColor];
         _headerImageView.layer.masksToBounds = YES;
         _headerImageView.layer.cornerRadius = 39;
+        _headerImageView.userInteractionEnabled = YES;
         [backView addSubview:_headerImageView];
         [_headerImageView mas_makeConstraints:^(MASConstraintMaker *make){
             make.centerX.equalTo(backView.centerX);
-            make.centerY.equalTo(backView.centerY);
+            make.centerY.equalTo(backView.centerY).offset(-20);
             make.size.equalTo(CGSizeMake(78, 78));
         }];
+        _userNickName = [[UILabel alloc]init];
+        _userNickName.textColor = [UIColor whiteColor];
+        _userNickName.font = [UIFont systemFontOfSize:14];
+        _userNickName.textAlignment = NSTextAlignmentCenter;
+        [backView addSubview:_userNickName];
+        [_userNickName mas_makeConstraints:^(MASConstraintMaker *make){
+            make.left.equalTo(backView.left);
+            make.right.equalTo(backView.right);
+            make.top.equalTo(_headerImageView.bottom).offset(12);
+        }];
+        
         [self addSubview:backView];
         _tableView = [[UITableView alloc]init];
         _tableView.backgroundColor = BACKGROUND_COLOR;

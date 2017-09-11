@@ -51,7 +51,6 @@
             make.right.equalTo(self.right);
             make.bottom.equalTo(copyright.top);
         }];
-        
     }
     return self;
 }

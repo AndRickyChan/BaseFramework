@@ -12,6 +12,8 @@
 
 @property(nonatomic,strong)UIImageView *headerImageView;
 
+@property(nonatomic,strong)UILabel *userNickName;
+
 @property(nonatomic,strong)UITableView *tableView;
 
 @end
