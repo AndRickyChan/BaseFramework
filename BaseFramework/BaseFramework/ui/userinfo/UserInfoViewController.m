@@ -9,6 +9,7 @@
 #import "UserInfoViewController.h"
 #import "UserInfoView.h"
 #import "AddressViewController.h"
+#import "CustomPickerView.h"
 
 @interface UserInfoViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
@@ -98,6 +99,8 @@
     }else if(indexPath.section == 1){
         if (indexPath.row == 0) {
             cell.detailTextLabel.text = _userSexStr;
+        }else if(indexPath.row == 1){
+            cell.detailTextLabel.text = _userAgeStr;
         }
     }else{
         //收货地址
@@ -115,6 +118,14 @@
     }else if(indexPath.section == 1){
         if (indexPath.row == 0) {
             [self showSexSheet];
+        }else if(indexPath.row == 1){
+            //年龄
+            CustomPickerView *pickerView = [[CustomPickerView alloc]initWithTitle:@"选择年龄" block:^(NSString *data){
+                _userAgeStr = data;
+                [_userInfoView.tableView reloadData];
+            }];
+            pickerView.dataArrays = @[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"8"].mutableCopy;
+            [pickerView show];
         }
     }else{//选择收货地址
         AddressViewController *controller = [[AddressViewController alloc]init];

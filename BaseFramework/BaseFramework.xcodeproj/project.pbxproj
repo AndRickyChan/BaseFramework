@@ -26,6 +26,7 @@
 		9C306FDA1F6764860037913C /* AddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C306FD91F6764860037913C /* AddressViewController.m */; };
 		9C306FDD1F6764A80037913C /* AddressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C306FDC1F6764A80037913C /* AddressView.m */; };
 		9C306FE01F6776FA0037913C /* UserDefaultUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C306FDF1F6776FA0037913C /* UserDefaultUtils.m */; };
+		9C306FE31F6785580037913C /* CustomPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C306FE21F6785580037913C /* CustomPickerView.m */; };
 		9C311FE51F6670C100C00E65 /* SettingService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C311FE41F6670C100C00E65 /* SettingService.m */; };
 		9C311FE91F66713700C00E65 /* MineService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C311FE81F66713700C00E65 /* MineService.m */; };
 		9C311FEF1F66826300C00E65 /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C311FEE1F66826300C00E65 /* UserInfoViewController.m */; };
@@ -90,6 +91,8 @@
 		9C306FDC1F6764A80037913C /* AddressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressView.m; sourceTree = "<group>"; };
 		9C306FDE1F6776FA0037913C /* UserDefaultUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultUtils.h; sourceTree = "<group>"; };
 		9C306FDF1F6776FA0037913C /* UserDefaultUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultUtils.m; sourceTree = "<group>"; };
+		9C306FE11F6785580037913C /* CustomPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPickerView.h; sourceTree = "<group>"; };
+		9C306FE21F6785580037913C /* CustomPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPickerView.m; sourceTree = "<group>"; };
 		9C311FE31F6670C100C00E65 /* SettingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingService.h; sourceTree = "<group>"; };
 		9C311FE41F6670C100C00E65 /* SettingService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingService.m; sourceTree = "<group>"; };
 		9C311FE71F66713700C00E65 /* MineService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineService.h; sourceTree = "<group>"; };
@@ -219,6 +222,8 @@
 		9C2439D11F5F8FA2005CA5D7 /* widgets */ = {
 			isa = PBXGroup;
 			children = (
+				9C306FE11F6785580037913C /* CustomPickerView.h */,
+				9C306FE21F6785580037913C /* CustomPickerView.m */,
 			);
 			path = widgets;
 			sourceTree = "<group>";
@@ -703,6 +708,7 @@
 				9C3CACE01F60F8390002915B /* HomeViewController.m in Sources */,
 				9C3CACE41F60F8620002915B /* HomeView.m in Sources */,
 				9C2439ED1F5FA30C005CA5D7 /* LoginView.m in Sources */,
+				9C306FE31F6785580037913C /* CustomPickerView.m in Sources */,
 				9C306FDD1F6764A80037913C /* AddressView.m in Sources */,
 				9C2439DE1F5F9A7D005CA5D7 /* BaseViewController.m in Sources */,
 				9C3CAD0A1F6142BE0002915B /* SettingViewController.m in Sources */,

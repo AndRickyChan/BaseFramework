@@ -41,7 +41,7 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if (section == 0) {
-        return 0;
+        return self.addressArrays.count;
     }else{
         return 1;
     }
@@ -70,7 +70,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
     if (section == 0) {
-        if (self.addressArrays == nil) {
+        if (self.addressArrays.count == 0) {
             return 0;
         }else{
             return 12;
