@@ -90,5 +90,12 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
+-(NSMutableArray *)addressArrays{
+    if (_addressArrays == nil) {
+        _addressArrays = @[].mutableCopy;
+    }
+    return _addressArrays;
+}
+
 
 @end

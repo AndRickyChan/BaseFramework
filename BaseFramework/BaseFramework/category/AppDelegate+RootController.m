@@ -8,6 +8,8 @@
 
 #import "AppDelegate+RootController.h"
 #import "LoginViewController.h"
+#import "UserDefaultUtils.h"
+#import "HomeRootViewController.h"
 
 @implementation AppDelegate (RootController)
 
@@ -26,8 +28,14 @@
 }
 
 -(void)setRootController{
-    LoginViewController *viewController = [[LoginViewController alloc]init];
-    self.window.rootViewController = viewController;
+    BOOL isLogin = [UserDefaultUtils boolValueForKey:IS_LOGIN];
+    if (isLogin) {
+        HomeRootViewController *viewController = [[HomeRootViewController alloc]init];
+        self.window.rootViewController = viewController;
+    }else{
+        LoginViewController *viewController = [[LoginViewController alloc]init];
+        self.window.rootViewController = viewController;
+    }
 }
 
 @end

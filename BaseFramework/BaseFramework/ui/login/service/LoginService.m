@@ -7,6 +7,7 @@
 //
 
 #import "LoginService.h"
+#import "UserDefaultUtils.h"
 
 @implementation LoginService
 
@@ -35,10 +36,12 @@
     request.paramDict = param;
     request.methodType = APIRequestMethodTypePost;
     [[APIClient shareInstance]executeWithApi:request success:^(APIRequest *api,APIResult *result){
+        [UserDefaultUtils saveBoolValue:true forKey:IS_LOGIN];
         if (self.delegate && [self.delegate respondsToSelector:@selector(loginSuccess)]) {
             [self.delegate loginSuccess];
         }
     } failed:^(APIRequest *api,NSError *error){
+        [UserDefaultUtils saveBoolValue:true forKey:IS_LOGIN];
         if(self.delegate && [self.delegate respondsToSelector:@selector(loginFailed:)]){
             [self.delegate loginFailed:error.domain];
         }

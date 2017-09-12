@@ -17,5 +17,8 @@
 #define NAVIGATIONBAR_HEIGHT 64
 #define TABLEBAR_HEIGHT 49
 
+#define IS_FIRST_ENTER @"is_first_enter"
+#define IS_LOGIN @"is_login"
+
 
 #endif /* BaseMacro_h */

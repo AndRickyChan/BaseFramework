@@ -10,6 +10,7 @@
 #import "SettingView.h"
 #import "LoginViewController.h"
 #import "AboutViewController.h"
+#import "UserDefaultUtils.h"
 
 @interface SettingViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
@@ -138,6 +139,7 @@
         [self.navigationController popToRootViewControllerAnimated:YES];
         LoginViewController *loginController = [[LoginViewController alloc]init];
         [UIApplication sharedApplication].delegate.window.rootViewController = loginController;
+        [UserDefaultUtils saveBoolValue:false forKey:IS_LOGIN];
     }];
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
     [alertController addAction:cancelAction];
