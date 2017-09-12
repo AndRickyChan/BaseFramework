@@ -23,8 +23,12 @@
 		9C2439FA1F5FE5CD005CA5D7 /* APIResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C2439F91F5FE5CD005CA5D7 /* APIResult.m */; };
 		9C2439FD1F5FEACE005CA5D7 /* APIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C2439FC1F5FEACE005CA5D7 /* APIRequest.m */; };
 		9C243A001F5FEF8F005CA5D7 /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C2439FF1F5FEF8E005CA5D7 /* APIClient.m */; };
+		9C306FDA1F6764860037913C /* AddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C306FD91F6764860037913C /* AddressViewController.m */; };
+		9C306FDD1F6764A80037913C /* AddressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C306FDC1F6764A80037913C /* AddressView.m */; };
 		9C311FE51F6670C100C00E65 /* SettingService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C311FE41F6670C100C00E65 /* SettingService.m */; };
 		9C311FE91F66713700C00E65 /* MineService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C311FE81F66713700C00E65 /* MineService.m */; };
+		9C311FEF1F66826300C00E65 /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C311FEE1F66826300C00E65 /* UserInfoViewController.m */; };
+		9C311FF21F6682C700C00E65 /* UserInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C311FF11F6682C700C00E65 /* UserInfoView.m */; };
 		9C3CACDA1F60F01C0002915B /* HomeRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3CACD91F60F01C0002915B /* HomeRootViewController.m */; };
 		9C3CACE01F60F8390002915B /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3CACDF1F60F8390002915B /* HomeViewController.m */; };
 		9C3CACE41F60F8620002915B /* HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3CACE31F60F8620002915B /* HomeView.m */; };
@@ -79,10 +83,18 @@
 		9C2439FC1F5FEACE005CA5D7 /* APIRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIRequest.m; sourceTree = "<group>"; };
 		9C2439FE1F5FEF8E005CA5D7 /* APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
 		9C2439FF1F5FEF8E005CA5D7 /* APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
+		9C306FD81F6764860037913C /* AddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressViewController.h; sourceTree = "<group>"; };
+		9C306FD91F6764860037913C /* AddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressViewController.m; sourceTree = "<group>"; };
+		9C306FDB1F6764A80037913C /* AddressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressView.h; sourceTree = "<group>"; };
+		9C306FDC1F6764A80037913C /* AddressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressView.m; sourceTree = "<group>"; };
 		9C311FE31F6670C100C00E65 /* SettingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingService.h; sourceTree = "<group>"; };
 		9C311FE41F6670C100C00E65 /* SettingService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingService.m; sourceTree = "<group>"; };
 		9C311FE71F66713700C00E65 /* MineService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineService.h; sourceTree = "<group>"; };
 		9C311FE81F66713700C00E65 /* MineService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineService.m; sourceTree = "<group>"; };
+		9C311FED1F66826300C00E65 /* UserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoViewController.h; sourceTree = "<group>"; };
+		9C311FEE1F66826300C00E65 /* UserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoViewController.m; sourceTree = "<group>"; };
+		9C311FF01F6682C700C00E65 /* UserInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoView.h; sourceTree = "<group>"; };
+		9C311FF11F6682C700C00E65 /* UserInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoView.m; sourceTree = "<group>"; };
 		9C3CACD81F60F01C0002915B /* HomeRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeRootViewController.h; sourceTree = "<group>"; };
 		9C3CACD91F60F01C0002915B /* HomeRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeRootViewController.m; sourceTree = "<group>"; };
 		9C3CACDE1F60F8390002915B /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
@@ -209,6 +221,8 @@
 		9C2439D21F5F8FB3005CA5D7 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				9C306FD51F6764590037913C /* address */,
+				9C311FEA1F66823100C00E65 /* userinfo */,
 				9C869C1C1F622682006200AA /* about */,
 				9C3CAD051F6142980002915B /* setting */,
 				9C3CACF41F6129310002915B /* forgetPass */,
@@ -300,11 +314,65 @@
 			path = service;
 			sourceTree = "<group>";
 		};
+		9C306FD51F6764590037913C /* address */ = {
+			isa = PBXGroup;
+			children = (
+				9C306FD71F6764700037913C /* service */,
+				9C306FD61F6764650037913C /* view */,
+				9C306FD81F6764860037913C /* AddressViewController.h */,
+				9C306FD91F6764860037913C /* AddressViewController.m */,
+			);
+			path = address;
+			sourceTree = "<group>";
+		};
+		9C306FD61F6764650037913C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9C306FDB1F6764A80037913C /* AddressView.h */,
+				9C306FDC1F6764A80037913C /* AddressView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		9C306FD71F6764700037913C /* service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
 		9C311FE61F66712500C00E65 /* service */ = {
 			isa = PBXGroup;
 			children = (
 				9C311FE71F66713700C00E65 /* MineService.h */,
 				9C311FE81F66713700C00E65 /* MineService.m */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		9C311FEA1F66823100C00E65 /* userinfo */ = {
+			isa = PBXGroup;
+			children = (
+				9C311FEC1F66824B00C00E65 /* service */,
+				9C311FEB1F66823E00C00E65 /* view */,
+				9C311FED1F66826300C00E65 /* UserInfoViewController.h */,
+				9C311FEE1F66826300C00E65 /* UserInfoViewController.m */,
+			);
+			path = userinfo;
+			sourceTree = "<group>";
+		};
+		9C311FEB1F66823E00C00E65 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9C311FF01F6682C700C00E65 /* UserInfoView.h */,
+				9C311FF11F6682C700C00E65 /* UserInfoView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		9C311FEC1F66824B00C00E65 /* service */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = service;
 			sourceTree = "<group>";
@@ -623,11 +691,14 @@
 				9C2439F31F5FA6A3005CA5D7 /* LogUtils.m in Sources */,
 				9C2439EA1F5F9E93005CA5D7 /* LoginService.m in Sources */,
 				9C2439F61F5FA810005CA5D7 /* SizeUtils.m in Sources */,
+				9C306FDA1F6764860037913C /* AddressViewController.m in Sources */,
 				9C311FE91F66713700C00E65 /* MineService.m in Sources */,
+				9C311FF21F6682C700C00E65 /* UserInfoView.m in Sources */,
 				9C2439FA1F5FE5CD005CA5D7 /* APIResult.m in Sources */,
 				9C3CACE01F60F8390002915B /* HomeViewController.m in Sources */,
 				9C3CACE41F60F8620002915B /* HomeView.m in Sources */,
 				9C2439ED1F5FA30C005CA5D7 /* LoginView.m in Sources */,
+				9C306FDD1F6764A80037913C /* AddressView.m in Sources */,
 				9C2439DE1F5F9A7D005CA5D7 /* BaseViewController.m in Sources */,
 				9C3CAD0A1F6142BE0002915B /* SettingViewController.m in Sources */,
 				9C3CAD011F612F570002915B /* ForgetPassView.m in Sources */,
@@ -641,6 +712,7 @@
 				9C3CACEA1F60F9E30002915B /* ShopViewController.m in Sources */,
 				9C3CACEF1F60FA150002915B /* MineView.m in Sources */,
 				9C3CACF21F60FB080002915B /* ShopView.m in Sources */,
+				9C311FEF1F66826300C00E65 /* UserInfoViewController.m in Sources */,
 				9C2439E71F5F9E6F005CA5D7 /* LoginViewController.m in Sources */,
 				9C3CAD0D1F6145430002915B /* SettingView.m in Sources */,
 			);

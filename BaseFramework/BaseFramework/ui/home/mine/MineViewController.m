@@ -10,6 +10,7 @@
 #import "MineView.h"
 #import "MineService.h"
 #import "SettingViewController.h"
+#import "UserInfoViewController.h"
 
 @interface MineViewController ()<UITableViewDelegate,UITableViewDataSource,MineDelegate>
 {
@@ -30,28 +31,16 @@
     _mineView = [[MineView alloc]initWithFrame:self.view.bounds];
     _mineView.tableView.dataSource = self;
     _mineView.tableView.delegate = self;
-    UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(showActionSheet)];
+    UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(toMyInfoController)];
     [_mineView.headerImageView addGestureRecognizer:recognizer];
     [self.view addSubview:_mineView];
     _mineService = [[MineService alloc]initWithDelegate:self];
     [_mineService shareInitData];
 }
 
--(void)showActionSheet{
-    UIAlertController *controller = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
-    UIAlertAction *cameraAction = [UIAlertAction actionWithTitle:@"相机" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){
-    
-    }];
-    UIAlertAction *albumAction = [UIAlertAction actionWithTitle:@"从相册选择" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){
-        
-    }];
-    
-    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
-    
-    [controller addAction:cameraAction];
-    [controller addAction:albumAction];
-    [controller addAction:cancelAction];
-    [self presentViewController:controller animated:YES completion:nil];
+-(void)toMyInfoController{
+    UserInfoViewController *controller = [[UserInfoViewController alloc]init];
+    [self pushController:controller];
 }
 
 -(void)initDataSuccess:(NSString *)header nickName:(NSString *)nickName{
