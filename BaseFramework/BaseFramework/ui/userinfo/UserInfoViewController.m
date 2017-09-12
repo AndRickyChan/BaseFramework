@@ -36,6 +36,7 @@
     _userInfoView.tableView.delegate = self;
     _userInfoView.tableView.dataSource = self;
     _userSexStr = @"未知";
+    _userAgeStr = @"12岁";
 }
 
 - (void)didReceiveMemoryWarning {
@@ -121,10 +122,10 @@
         }else if(indexPath.row == 1){
             //年龄
             CustomPickerView *pickerView = [[CustomPickerView alloc]initWithTitle:@"选择年龄" block:^(NSString *data){
-                _userAgeStr = data;
+                _userAgeStr = [NSString stringWithFormat:@"%@岁",data];
                 [_userInfoView.tableView reloadData];
             }];
-            pickerView.dataArrays = @[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"8"].mutableCopy;
+            pickerView.dataArrays = @[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9"].mutableCopy;
             [pickerView show];
         }
     }else{//选择收货地址
