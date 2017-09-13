@@ -49,8 +49,10 @@
         formatter.dateFormat = @"yyyyMMddHHmmss";
         NSString *str = [formatter stringFromDate:[NSDate date]];
         NSString *fileName = [NSString stringWithFormat:@"%@.png",str];
+        
         //上传的参数（上传图片，以文件流的格式）
         [formData appendPartWithFileData:data name:name fileName:fileName mimeType:fileType];
+        
     } progress:nil success:^(NSURLSessionTask *task,id responseObject){
         [LogUtils log:[NSString stringWithFormat:@"%@---请求成功---%@",api.requestTag,responseObject]];
         NSDictionary *dict = (NSDictionary *)responseObject;
