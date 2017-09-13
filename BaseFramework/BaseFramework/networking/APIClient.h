@@ -17,4 +17,6 @@ typedef void(^RequestError)(APIRequest *api,NSError *error);
 
 -(void)executeWithApi:(APIRequest *)api success:(RequestSuccess)success failed:(RequestError)failed;
 
+-(void)executeUploadPostWithApi:(APIRequest *)api name:(NSString *)name mimeType:(NSString *)fileType image:(UIImage *)image success:(RequestSuccess)success failed:(RequestError)failed;
+
 @end

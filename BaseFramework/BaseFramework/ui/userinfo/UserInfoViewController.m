@@ -11,17 +11,19 @@
 #import "AddressViewController.h"
 #import "CustomPickerView.h"
 
-@interface UserInfoViewController ()<UITableViewDataSource,UITableViewDelegate>
+@interface UserInfoViewController ()<UITableViewDataSource,UITableViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 {
     UserInfoView *_userInfoView;
     NSString *_userHeaderStr;
     NSString *_userSexStr;
     NSString *_userAgeStr;
     NSString *_userBirthdayStr;
+    
 }
 
-
 @property(nonatomic,strong)NSMutableArray *infoArrays;
+
+@property(nonatomic,strong)UIImagePickerController *pickerController;
 
 @end
 
@@ -37,6 +39,7 @@
     _userInfoView.tableView.dataSource = self;
     _userSexStr = @"未知";
     _userAgeStr = @"12岁";
+    _userBirthdayStr = @"05-25";
 }
 
 - (void)didReceiveMemoryWarning {
@@ -98,10 +101,12 @@
         }];
         [headerView sd_setImageWithURL:[NSURL URLWithString:@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505125724436&di=13627ec04cf4979da4554f931bc6fe2e&imgtype=0&src=http%3A%2F%2Fa.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2Fdc54564e9258d109eba3d035d058ccbf6d814df0.jpg"]];
     }else if(indexPath.section == 1){
-        if (indexPath.row == 0) {
+        if (indexPath.row == 0) {//性别
             cell.detailTextLabel.text = _userSexStr;
-        }else if(indexPath.row == 1){
+        }else if(indexPath.row == 1){//年龄
             cell.detailTextLabel.text = _userAgeStr;
+        }else if(indexPath.row == 2){//生日
+            cell.detailTextLabel.text = _userBirthdayStr;
         }
     }else{
         //收货地址
@@ -134,20 +139,56 @@
     }
 }
 
+#pragma mark UIImagePickerController Delegate 
+
+//完成照片选择之后的回到方法
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info{
+    /* 此处参数 info 是一个字典，下面是字典中的键值 （从相机获取的图片和相册获取的图片时，两者的info值不尽相同）
+     * UIImagePickerControllerMediaType;      // 媒体类型
+     * UIImagePickerControllerOriginalImage;  // 原始图片
+     * UIImagePickerControllerEditedImage;    // 裁剪后图片
+     * UIImagePickerControllerCropRect;       // 图片裁剪区域（CGRect）
+     * UIImagePickerControllerMediaURL;       // 媒体的URL
+     * UIImagePickerControllerReferenceURL    // 原件的URL
+     * UIImagePickerControllerMediaMetadata   // 当数据来源是相机时，此值才有效
+     */
+    
+    UIImage *image = [info objectForKey:UIImagePickerControllerEditedImage];
+    NSString *url = [info objectForKey:UIImagePickerControllerReferenceURL];
+    [LogUtils log:url];
+    //数据回调出来了进行数据的保存
+    UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
+    
+    //调用完成之后关闭图片选择或者拍照界面
+    [self.pickerController dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{
+    
+    //调用完成之后关闭图片选择或者拍照界面
+    [self.pickerController dismissViewControllerAnimated:YES completion:nil];
+}
+
 -(void)showCameraSheet{
     UIAlertController *controller = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
     controller.view.tintColor = TITLE_COLOR;
     UIAlertAction *cameraAction = [UIAlertAction actionWithTitle:@"相机" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){
-        
+        self.pickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
+        [self presentViewController:self.pickerController animated:YES completion:nil];
     }];
     UIAlertAction *albumAction = [UIAlertAction actionWithTitle:@"从相册选择" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){
-        
+        self.pickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        [self presentViewController:self.pickerController animated:YES completion:nil];
     }];
     
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
     
-    [controller addAction:cameraAction];
-    [controller addAction:albumAction];
+    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]){//判断设备是否支持相机
+        [controller addAction:cameraAction];
+    }
+    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]){
+        [controller addAction:albumAction];
+    }
     [controller addAction:cancelAction];
     [self presentViewController:controller animated:YES completion:nil];
 }
@@ -178,6 +219,15 @@
         _infoArrays = @[@[@"头像"],@[@"性别",@"年龄",@"生日"],@[@"收货地址"]].mutableCopy;
     }
     return _infoArrays;
+}
+
+-(UIImagePickerController *)pickerController{
+    if (_pickerController == nil) {
+        _pickerController = [[UIImagePickerController alloc]init];
+        _pickerController.allowsEditing = YES;
+        _pickerController.delegate = self;
+    }
+    return _pickerController;
 }
 
 @end
