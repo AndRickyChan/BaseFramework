@@ -10,8 +10,9 @@
 #import "UserInfoView.h"
 #import "AddressViewController.h"
 #import "CustomPickerView.h"
+#import <RSKImageCropper/RSKImageCropper.h>
 
-@interface UserInfoViewController ()<UITableViewDataSource,UITableViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+@interface UserInfoViewController ()<UITableViewDataSource,UITableViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate,RSKImageCropViewControllerDelegate>
 {
     UserInfoView *_userInfoView;
     NSString *_userHeaderStr;
@@ -153,12 +154,11 @@
      * UIImagePickerControllerMediaMetadata   // 当数据来源是相机时，此值才有效
      */
     
-    UIImage *image = [info objectForKey:UIImagePickerControllerEditedImage];
-    NSString *url = [info objectForKey:UIImagePickerControllerReferenceURL];
-    [LogUtils log:url];
-    //数据回调出来了进行数据的保存
-    UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
-    
+    UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
+    RSKImageCropViewController *cropperController = [[RSKImageCropViewController alloc]initWithImage:image];
+    cropperController.delegate = self;
+//    cropperController.dataSource = self;
+    [self pushController:cropperController];
     //调用完成之后关闭图片选择或者拍照界面
     [self.pickerController dismissViewControllerAnimated:YES completion:nil];
 }
@@ -168,6 +168,20 @@
     //调用完成之后关闭图片选择或者拍照界面
     [self.pickerController dismissViewControllerAnimated:YES completion:nil];
 }
+
+#pragma mark cropperImage delegate
+
+-(void)imageCropViewControllerDidCancelCrop:(RSKImageCropViewController *)controller{
+    [self popController];
+}
+
+-(void)imageCropViewController:(RSKImageCropViewController *)controller didCropImage:(UIImage *)croppedImage usingCropRect:(CGRect)cropRect{
+    NSLog(@"裁剪图片成功...");
+    [self popController];
+}
+
+
+#pragma mark some method begin
 
 -(void)showCameraSheet{
     UIAlertController *controller = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
@@ -224,7 +238,7 @@
 -(UIImagePickerController *)pickerController{
     if (_pickerController == nil) {
         _pickerController = [[UIImagePickerController alloc]init];
-        _pickerController.allowsEditing = YES;
+        _pickerController.allowsEditing = NO;
         _pickerController.delegate = self;
     }
     return _pickerController;
