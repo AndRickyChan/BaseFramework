@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <SDCycleScrollView.h>
+
 
 @interface HomeView : UIView
+
+@property(nonatomic,strong)UIScrollView *scrollView;
+
+@property(nonatomic,strong)SDCycleScrollView *bannerView;
+
 
 @end

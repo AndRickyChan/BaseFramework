@@ -10,5 +10,6 @@ pod 'MBProgressHUD'
 pod 'SDWebImage'
 pod 'LCTabBarController'
 pod 'JSONModel'
+pod 'SDCycleScrollView'
 pod 'RSKImageCropper'
 end

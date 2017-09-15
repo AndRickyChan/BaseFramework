@@ -14,16 +14,18 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        UILabel *label = [[UILabel alloc]init];
-        label.text = @"首页";
-        label.textColor = TITLE_COLOR;
-        label.textAlignment = NSTextAlignmentCenter;
-        label.backgroundColor = [UIColor yellowColor];
-        [self addSubview:label];
-        [label mas_makeConstraints:^(MASConstraintMaker *make){
-            make.centerX.equalTo(self.centerX);
-            make.centerY.equalTo(self.centerY);
-            make.size.equalTo(CGSizeMake(100, 100));
+        _scrollView = [[UIScrollView alloc]initWithFrame:self.bounds];
+        [self addSubview:_scrollView];
+        
+        _bannerView = [[SDCycleScrollView alloc]init];
+        _bannerView.pageControlAliment = SDCycleScrollViewPageContolStyleAnimated;
+        _bannerView.autoScrollTimeInterval = 2;
+        [_scrollView addSubview:_bannerView];
+        [_bannerView mas_makeConstraints:^(MASConstraintMaker *make){
+            make.left.equalTo(self.left);
+            make.top.equalTo(self.top);
+            make.right.equalTo(self.right);
+            make.height.equalTo(200);
         }];
     }
     return self;
