@@ -48,6 +48,10 @@
 		9C869C201F6226A6006200AA /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C869C1F1F6226A6006200AA /* AboutViewController.m */; };
 		9C869C231F6226C1006200AA /* AboutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C869C221F6226C1006200AA /* AboutView.m */; };
 		9C869C261F622F30006200AA /* AppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C869C251F622F30006200AA /* AppUtils.m */; };
+		9CF35D851F6B5F5D00018E77 /* ShopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF35D841F6B5F5D00018E77 /* ShopCell.m */; };
+		9CF35D881F6B6B9700018E77 /* ShopModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF35D871F6B6B9700018E77 /* ShopModel.m */; };
+		9CF35D8E1F6B7A4700018E77 /* ShopDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF35D8D1F6B7A4700018E77 /* ShopDetailViewController.m */; };
+		9CF35D911F6B7A7E00018E77 /* ShopDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF35D901F6B7A7E00018E77 /* ShopDetailView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -136,6 +140,14 @@
 		9C869C221F6226C1006200AA /* AboutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutView.m; sourceTree = "<group>"; };
 		9C869C241F622F30006200AA /* AppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppUtils.h; sourceTree = "<group>"; };
 		9C869C251F622F30006200AA /* AppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppUtils.m; sourceTree = "<group>"; };
+		9CF35D831F6B5F5D00018E77 /* ShopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopCell.h; sourceTree = "<group>"; };
+		9CF35D841F6B5F5D00018E77 /* ShopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopCell.m; sourceTree = "<group>"; };
+		9CF35D861F6B6B9700018E77 /* ShopModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopModel.h; sourceTree = "<group>"; };
+		9CF35D871F6B6B9700018E77 /* ShopModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopModel.m; sourceTree = "<group>"; };
+		9CF35D8C1F6B7A4700018E77 /* ShopDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopDetailViewController.h; sourceTree = "<group>"; };
+		9CF35D8D1F6B7A4700018E77 /* ShopDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopDetailViewController.m; sourceTree = "<group>"; };
+		9CF35D8F1F6B7A7E00018E77 /* ShopDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopDetailView.h; sourceTree = "<group>"; };
+		9CF35D901F6B7A7E00018E77 /* ShopDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopDetailView.m; sourceTree = "<group>"; };
 		D26AF7711EDFA0632F0B6955 /* Pods-BaseFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseFramework/Pods-BaseFramework.release.xcconfig"; sourceTree = "<group>"; };
 		E35ABACDA9E3773F8A8268CA /* Pods-BaseFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseFramework/Pods-BaseFramework.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -236,6 +248,7 @@
 		9C2439D21F5F8FB3005CA5D7 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				9CF35D891F6B7A1900018E77 /* shopdetail */,
 				9C306FD51F6764590037913C /* address */,
 				9C311FEA1F66823100C00E65 /* userinfo */,
 				9C869C1C1F622682006200AA /* about */,
@@ -276,6 +289,8 @@
 		9C2439D51F5F8FF6005CA5D7 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				9CF35D861F6B6B9700018E77 /* ShopModel.h */,
+				9CF35D871F6B6B9700018E77 /* ShopModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -458,6 +473,8 @@
 			children = (
 				9C3CACF01F60FB080002915B /* ShopView.h */,
 				9C3CACF11F60FB080002915B /* ShopView.m */,
+				9CF35D831F6B5F5D00018E77 /* ShopCell.h */,
+				9CF35D841F6B5F5D00018E77 /* ShopCell.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -562,6 +579,33 @@
 				9C869C221F6226C1006200AA /* AboutView.m */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		9CF35D891F6B7A1900018E77 /* shopdetail */ = {
+			isa = PBXGroup;
+			children = (
+				9CF35D8B1F6B7A3100018E77 /* service */,
+				9CF35D8A1F6B7A2500018E77 /* view */,
+				9CF35D8C1F6B7A4700018E77 /* ShopDetailViewController.h */,
+				9CF35D8D1F6B7A4700018E77 /* ShopDetailViewController.m */,
+			);
+			path = shopdetail;
+			sourceTree = "<group>";
+		};
+		9CF35D8A1F6B7A2500018E77 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9CF35D8F1F6B7A7E00018E77 /* ShopDetailView.h */,
+				9CF35D901F6B7A7E00018E77 /* ShopDetailView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		9CF35D8B1F6B7A3100018E77 /* service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = service;
 			sourceTree = "<group>";
 		};
 		9E4D62266DF1A7CFFD285F24 /* Pods */ = {
@@ -715,11 +759,14 @@
 				9C2439ED1F5FA30C005CA5D7 /* LoginView.m in Sources */,
 				9C306FE31F6785580037913C /* CustomPickerView.m in Sources */,
 				9C306FDD1F6764A80037913C /* AddressView.m in Sources */,
+				9CF35D851F6B5F5D00018E77 /* ShopCell.m in Sources */,
 				9C2439DE1F5F9A7D005CA5D7 /* BaseViewController.m in Sources */,
 				9C3CAD0A1F6142BE0002915B /* SettingViewController.m in Sources */,
 				9C3CAD011F612F570002915B /* ForgetPassView.m in Sources */,
 				9C869C261F622F30006200AA /* AppUtils.m in Sources */,
+				9CF35D881F6B6B9700018E77 /* ShopModel.m in Sources */,
 				9C3CACE71F60F9D50002915B /* MineViewController.m in Sources */,
+				9CF35D911F6B7A7E00018E77 /* ShopDetailView.m in Sources */,
 				9C2439E11F5F9BF9005CA5D7 /* AppDelegate+RootController.m in Sources */,
 				9C869C201F6226A6006200AA /* AboutViewController.m in Sources */,
 				9C3CACFE1F6129AA0002915B /* RegisterView.m in Sources */,
@@ -733,6 +780,7 @@
 				9C2439E71F5F9E6F005CA5D7 /* LoginViewController.m in Sources */,
 				9C306FE01F6776FA0037913C /* UserDefaultUtils.m in Sources */,
 				9C3CAD0D1F6145430002915B /* SettingView.m in Sources */,
+				9CF35D8E1F6B7A4700018E77 /* ShopDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

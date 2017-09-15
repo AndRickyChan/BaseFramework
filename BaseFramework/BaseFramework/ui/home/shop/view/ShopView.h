@@ -10,4 +10,6 @@
 
 @interface ShopView : UIView
 
+@property(nonatomic,strong)UITableView *tableView;
+
 @end

@@ -14,16 +14,19 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        UILabel *label = [[UILabel alloc]init];
-        label.text = @"商店";
-        label.textColor = TITLE_COLOR;
-        label.textAlignment = NSTextAlignmentCenter;
-        label.backgroundColor = [UIColor yellowColor];
-        [self addSubview:label];
-        [label mas_makeConstraints:^(MASConstraintMaker *make){
-            make.centerX.equalTo(self.centerX);
-            make.centerY.equalTo(self.centerY);
-            make.size.equalTo(CGSizeMake(100, 100));
+        _tableView = [[UITableView alloc]init];
+        _tableView.backgroundColor = BACKGROUND_COLOR;
+        _tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
+        _tableView.separatorStyle= UITableViewCellSeparatorStyleSingleLine;
+        _tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
+        _tableView.estimatedRowHeight = 110;
+        _tableView.rowHeight = UITableViewAutomaticDimension;
+        [self addSubview:_tableView];
+        [_tableView mas_makeConstraints:^(MASConstraintMaker *make){
+            make.left.equalTo(self.left);
+            make.top.equalTo(self.top);
+            make.right.equalTo(self.right);
+            make.bottom.equalTo(self.bottom);
         }];
     }
     return self;
